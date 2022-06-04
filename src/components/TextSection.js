@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
-export default function TextSection() {
+export default function TextSection({ title, description }) {
   return (
     <Wrapper>
-      <Title>Three.js in React</Title>
-      <Description>
-        Bring your website to life with beautiful 3D objects
-      </Description>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
     </Wrapper>
   );
 }
@@ -26,10 +24,11 @@ const Title = styled.h1`
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
+  width: 100%;
 `;
 
 const Description = styled.p`
-  max-width: 240px;
+  max-width: 500px;
   color: rgba(255, 255, 255, 0.7);
   font-style: normal;
   font-weight: normal;

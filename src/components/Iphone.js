@@ -8,7 +8,7 @@ export default function Model({ ...props }) {
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
-          <group scale={800}>
+          <group scale={600}>
             <mesh
               geometry={nodes.Body_Mic_0.geometry}
               material={materials.material}

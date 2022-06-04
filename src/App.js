@@ -13,8 +13,10 @@ export default function App() {
   return (
     <Wrapper className="App">
       <Background />
-      <TextSection />
-
+      <TextSection
+        title="TS-DEV 3D"
+        description="Let's Create 3D Modeling opjects using React JS and Three JS"
+      />
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
@@ -24,6 +26,10 @@ export default function App() {
         </Suspense>
       </Canvas>
 
+      <TextSection
+        title="3D Box Geometry"
+        description="Box Geometry with transparent color"
+      />
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
@@ -33,6 +39,10 @@ export default function App() {
         </Suspense>
       </Canvas>
 
+      <TextSection
+        title="3D Flobby Distort"
+        description="Flobby Material with inconsistency state"
+      />
       <Canvas className="canvas">
         <OrbitControls enableZoom={false} />
         <ambientLight intensity={0.5} />
